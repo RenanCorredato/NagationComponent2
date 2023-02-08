@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nagation_graph"
+    app:startDestination="@id/emailMainFragment">
+
+    <fragment
+        android:id="@+id/emailMainFragment"
+        android:name="com.renancorredato.componentesvisuaisnavegacao.fragments.EmailMainFragment"
+        android:label="EmailMainFragment"
+        tools:layout="@layout/fragment_email_main">
+        <action
+            android:id="@+id/action_emailMainFragment_to_emailDetailFragment"
+            app:destination="@id/emailDetailFragment" />
+        <action
+            android:id="@+id/action_emailMainFragment_to_emailNewFragament"
+            app:destination="@id/emailNewFragament" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailDetailFragment"
+        android:name="com.renancorredato.componentesvisuaisnavegacao.fragments.EmailDetailFragment"
+        android:label="EmailDetailFragment"
+        tools:layout="@layout/fragment_email_datail"/>
+    <fragment
+        android:id="@+id/emailNewFragament"
+        android:name="com.renancorredato.componentesvisuaisnavegacao.fragments.EmailNewFragament"
+        android:label="EmailNewFragament"
+        tools:layout="@layout/fragment_email_new"/>
+    <fragment
+        android:id="@+id/calendarMainFragment"
+        android:name="com.renancorredato.componentesvisuaisnavegacao.fragments.CalendarMainFragment"
+        android:label="CalendarMainFragment"
+        tools:layout="@layout/fragment_calendar_main">
+        <action
+            android:id="@+id/action_calendarMainFragment_to_calendarDetailFragment"
+            app:destination="@id/calendarDetailFragment" />
+        <action
+            android:id="@+id/action_calendarMainFragment_to_calendarNewFragment"
+            app:destination="@id/calendarNewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarDetailFragment"
+        android:name="com.renancorredato.componentesvisuaisnavegacao.fragments.CalendarDetailFragment"
+        android:label="CalendarDetailFragment"
+        tools:layout="@layout/fragment_calendar_detail"/>
+    <fragment
+        android:id="@+id/calendarNewFragment"
+        android:name="com.renancorredato.componentesvisuaisnavegacao.fragments.CalendarNewFragment"
+        android:label="CalendarNewFragment"
+        tools:layout="@layout/fragment_calendar_new"/>
+    <fragment
+        android:id="@+id/searchMainFragment"
+        android:name="com.renancorredato.componentesvisuaisnavegacao.fragments.SearchMainFragment"
+        android:label="SearchMainFragment"
+        tools:layout="@layout/fragment_search_main">
+        <action
+            android:id="@+id/action_searchMainFragment_to_searchDetailsFragment"
+            app:destination="@id/searchDetailsFragment" />
+        <action
+            android:id="@+id/action_searchMainFragment_to_searchNewFragment"
+            app:destination="@id/searchNewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchDetailsFragment"
+        android:name="com.renancorredato.componentesvisuaisnavegacao.fragments.SearchDetailsFragment"
+        android:label="SearchDetailsFragment"
+        tools:layout="@layout/fragment_search_detail"/>
+    <fragment
+        android:id="@+id/searchNewFragment"
+        android:name="com.renancorredato.componentesvisuaisnavegacao.fragments.SearchNewFragment"
+        android:label="SearchNewFragment"
+        tools:layout="@layout/fragment_calendar_new"/>
+</navigation>

@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/emailMainFragment"
         android:name="com.renancorredato.componentesvisuaisnavegacao.fragments.EmailMainFragment"
-        android:label="EmailMainFragment"
+        android:label="Emails"
         tools:layout="@layout/fragment_email_main">
         <action
             android:id="@+id/action_emailMainFragment_to_emailDetailFragment"
@@ -20,13 +20,13 @@
     <fragment
         android:id="@+id/emailDetailFragment"
         android:name="com.renancorredato.componentesvisuaisnavegacao.fragments.EmailDetailFragment"
-        android:label="EmailDetailFragment"
-        tools:layout="@layout/fragment_email_datail"/>
+        android:label="Datalhes do email"
+        tools:layout="@layout/fragment_email_datail" />
     <fragment
         android:id="@+id/emailNewFragament"
         android:name="com.renancorredato.componentesvisuaisnavegacao.fragments.EmailNewFragament"
-        android:label="EmailNewFragament"
-        tools:layout="@layout/fragment_email_new"/>
+        android:label="Novo Email"
+        tools:layout="@layout/fragment_email_new" />
     <fragment
         android:id="@+id/calendarMainFragment"
         android:name="com.renancorredato.componentesvisuaisnavegacao.fragments.CalendarMainFragment"

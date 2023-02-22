@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/emailMainFragment"
+        android:title="Email"
+        android:icon="@drawable/ic_baseline_email_24"
+        />
+
+    <item
+        android:id="@+id/searchMainFragment"
+        android:title="Busca"
+        android:icon="@drawable/ic_baseline_search_24"
+        />
+    <item
+        android:id="@+id/calendarMainFragment"
+        android:title="Calendário"
+        android:icon="@drawable/ic_baseline_calendar_today_24"
+        />
 </menu>
+
